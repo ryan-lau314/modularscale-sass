@@ -7,34 +7,11 @@ Ems work especially well with modular scales as their recursive properties mimic
 To get started, you need to select a ratio and a base value. The base value is usually your text font size or 1em. Optionally you can add another value to create a double stranded modular scale which might be useful to create more options for in-between values. This base size paired with a ratio such as the golden ratio or any musical proportion will create your scale of values which all share this proportion.
 
 ## Install
-
-### Eyeglass
-
-* Terminal: `npm install modularscale-sass --save-dev`
-* SCSS: `@import 'modularscale'`
-
 ### Webpack with sass-loader
 
-* Terminal: `npm install modularscale-sass --save-dev`
+* Terminal: `npm install @ryan-lau314/modularscale-sass --save-dev`
 * Webpack config: install and use [sass-loader](https://github.com/jtangelder/sass-loader#apply-via-webpack-config)
 * SCSS: `@import '~modularscale-sass/stylesheets/modularscale';`
-
-### Bower
-
-* Terminal: `bower install modular-scale --save-dev`
-* SCSS: `@import '../link_to_component_dir/modularscale';`
-
-### Vanilla Sass
-
-* [Download the latest zip](https://github.com/modularscale/modularscale-sass/releases/latest)
-* Extract into your project
-* SCSS: `@import 'modularscale';`
-
-### Compass (no longer being updated. Last release v3.0.2)
-
-* Terminal: `gem install modular-scale --pre`
-* Compass config: `require 'modular-scale'`
-* SCSS: `@import 'modularscale';`
 
 ## Using modular scale
 
@@ -125,11 +102,6 @@ h2 {
 ```
 
 If you do happen to have any values that are just named without numbers they will be ignored by the responsive mixin, it’s smart enough to just pull values that look like breakpoints.
-
-#### Note on non-integer values
-
-Unfortunately [Sass doesn’t natively support exponents](https://github.com/sass/sass/issues/684#issuecomment-196852515). This isn’t all bad news, you can either use [Compass](http://compass-style.org/), [mathsass](https://github.com/terkel/mathsass), or another library that has a `pow()` function that supports non-integer values and this plugin will pick up on that function and use it. You will then be able to write values like `ms(2.5)`. This is also a prerequisite for _target sizes_ below.
-
 #### Target sizes
 
 _NOTE: Please see above section on non-integer values before using this feature_
