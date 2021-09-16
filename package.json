@@ -1,6 +1,6 @@
 {
   "name": "@ryan-lau314/modularscale-sass",
-  "version": "3.0.10",
+  "version": "3.0.11",
   "description": "A tool to help web designers size their type in a more meaningful way.",
   "main": "stylesheets/_modularscale.scss",
   "scripts": {
